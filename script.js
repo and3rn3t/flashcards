@@ -1,4 +1,4 @@
-// Get page elements from DOM
+
 
 // Create New Card Modal with Get Elements and Event Listeners
 var createCardModal = document.getElementById('createCardModal');

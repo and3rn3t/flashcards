@@ -1,142 +1,108 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset='utf-8' />
-    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href='./bootstrap.css' rel='stylesheet' />
+    <link href="./bootstrap.css" rel="stylesheet" />
 
     <title>Andernet Flashcards!</title>
   </head>
   <body>
     <!-- Testing navigation bar -->
-    <nav class='navbar navbar-expand-lg navbar-light bg-light'>
-      <div class='container-fluid'>
-        <a class='navbar-brand' href='#'>Andernet Flashcards</a>
-        <div class='d-flex justify-content-end' id='navbarNav'>
-          <button class='btn btn-primary text-light' id='createCardButton' data-bs-toggle='modal' data-bs-target='#createCardModal'>New Card</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Andernet Flashcards</a>
+        <div class="d-flex justify-content-end" id="navbarNav">
+          <button
+            class="btn btn-primary text-light"
+            id="createCardButton"
+            data-bs-toggle="modal"
+            data-bs-target="#createCardModal"
+          >
+            New Card
+          </button>
         </div>
       </div>
     </nav>
 
     <!-- Testing flexbox container -->
-    <div class='container-fluid px-4 d-grid gap-3'>
-      <div class='row gy-5'>
-        <div class='col'>
-          <div class='card bg-info bg-gradient'>
-            <div class='card-body'>
-              <h5 class='card-title'>Card 1</h5>
-              <p class='card-text'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
+    <div class="card-group">
+      <div class="card bg-info bg-gradient">
+        <div class="card-body">
+          <h5 class="card-title">Card 1</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
         </div>
-        <div class='col'>
-          <div class='card bg-info bg-gradient'>
-            <div class='card-body'>
-              <h5 class='card-title'>Card 2</h5>
-              <p class='card-text'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
+      </div>
+      <div class="card bg-info bg-gradient">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua..
+          </p>
         </div>
-        <div class='col'>
-          <div class='card bg-info bg-gradient'>
-            <div class='card-body'>
-              <h5 class='card-title'>Card 3</h5>
-              <p class='card-text'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class='col'>
-          <div class='card bg-info bg-gradient'>
-            <div class='card-body'>
-              <h5 class='card-title'>Card 4</h5>
-              <p class='card-text'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class='col'>
-          <div class='card bg-info bg-gradient'>
-            <div class='card-body'>
-              <h5 class='card-title'>Card 5</h5>
-              <p class='card-text'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class='col'>
-          <div class='card bg-info bg-gradient'>
-            <div class='card-body'>
-              <h5 class='card-title'>Card 6</h5>
-              <p class='card-text'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class='col'>
-          <div class='card bg-info bg-gradient'>
-            <div class='card-body'>
-              <h5 class='card-title'>Card 7</h5>
-              <p class='card-text'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
+      </div>
+      <div class="card bg-info bg-gradient">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
         </div>
       </div>
     </div>
 
-    <div class='modal fade' id='createCardModal' tabindex='-1'>
-      <div class='modal-dialog'>
-        <div class='modal-content'>
-          <div class='modal-header'>
-            <h5 class='modal-title' id='createCardModal'>New Card</h5>
-            <button type='button' class='btn-close' data-bs-dismiss='modal'></button>
+    <div class="modal fade" id="createCardModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="createCardModal">New Card</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
           </div>
-          <div class='modal-body'>
-            <form>
-              <div class='mb-3'>
-                <label for='card-title' class='col-form-label'>
+          <div class="modal-body">
+            <form id='createCard'>
+              <div class="mb-3">
+                <label for="card-title" class="col-form-label">
                   Card Title:
                 </label>
-                <input type='text' class='form-control' id='card-title' />
+                <input type="text" class="form-control" id="card-title" />
               </div>
-              <div class='mb-3'>
-                <label for='card-text' class='col-form-label'>Card Text:</label>
-                <textarea class='form-control' id='card-text'></textarea>
+              <div class="mb-3">
+                <label for="card-text" class="col-form-label">
+                  Card Text:
+                </label>
+                <textarea class="form-control" id="card-text">
+                </textarea>
               </div>
             </form>
           </div>
-          <div class='modal-footer'>
-            <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
             </button>
-            <button type='button' class='btn btn-primary'>Create Card
-            </button>
+            <button type="button" class="btn btn-primary">Create Card</button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Bootstrap and standalone JavaScript -->
-    <script src='./bootstrap.bundle.js'></script>
-    <script src='./script.js'></script>
+    <script src="./bootstrap.bundle.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
