@@ -15,24 +15,8 @@
     <nav class='navbar navbar-expand-lg navbar-light bg-light'>
       <div class='container-fluid'>
         <a class='navbar-brand' href='#'>Andernet Flashcards</a>
-        <button
-          class='navbar-toggler'
-          type='button'
-          data-bs-toggle='collapse'
-          data-bs-target='#navbarNav'
-        >
-        </button>
         <div class='d-flex justify-content-end' id='navbarNav'>
-              <a class='btn btn-primary text-body' href='#' role='button'>
-                <img
-                  src='./img/pencil-square.svg'
-                  alt=''
-                  width='30'
-                  height='24'
-                  class='d-inline-block align-text-middle'
-                />
-                New Card
-              </a>
+          <button class='btn btn-primary text-light' id='createCardButton' data-bs-toggle='modal' data-bs-target='#createCard'>New Card</button>
         </div>
       </div>
     </nav>
@@ -120,7 +104,38 @@
       </div>
     </div>
 
-    <!-- Bootstrap JavaScript -->
+    <div class='modal fade' id='createCardModal' tabindex='-1'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <h5 class='modal-title' id='createCardModal'>New Card</h5>
+            <button type='button' class='btn-close' data-bs-dismiss='modal'></button>
+          </div>
+          <div class='modal-body'>
+            <form>
+              <div class='mb-3'>
+                <label for='card-title' class='col-form-label'>
+                  Card Title:
+                </label>
+                <input type='text' class='form-control' id='card-title' />
+              </div>
+              <div class='mb-3'>
+                <label for='card-text' class='col-form-label'>Card Text:</label>
+                <textarea class='form-control' id='card-text'></textarea>
+              </div>
+            </form>
+          </div>
+          <div class='modal-footer'>
+            <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close
+            </button>
+            <button type='button' class='btn btn-primary'>Create Card
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap and standalone JavaScript -->
     <script src='./bootstrap.bundle.js'></script>
     <script src='./script.js'></script>
   </body>
