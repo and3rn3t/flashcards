@@ -28,36 +28,15 @@
       </div>
     </nav>
 
-    <!-- Testing flexbox container -->
+    <!-- Flexbox container for cards -->
     <div class="card-group">
       <div class="card bg-info bg-gradient">
         <div class="card-body">
-          <h5 class="card-title">Card 1</h5>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <button type="button" class="btn btn-lg btn-primary" data-bs-toggle="popover" title="Answer:" data-bs-content="Here's the answer!">Reveal Answer</button>
         </div>
       </div>
-      <div class="card bg-info bg-gradient">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua..
-          </p>
-        </div>
-      </div>
-      <div class="card bg-info bg-gradient">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-    </div>
 
     <div class="modal fade" id="createCardModal" tabindex="-1">
       <div class="modal-dialog">
@@ -71,7 +50,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form id='createCard'>
+            <form id="createCard">
               <div class="mb-3">
                 <label for="card-title" class="col-form-label">
                   Card Title:
@@ -82,8 +61,13 @@
                 <label for="card-text" class="col-form-label">
                   Card Text:
                 </label>
-                <textarea class="form-control" id="card-text">
-                </textarea>
+                <textarea class="form-control" id="card-text"> </textarea>
+              </div>
+              <div class="mb-3">
+                <label for="card-answer" class="col-form-label">
+                  Card Answer:
+                </label>
+                <textarea class="form-control" id="card-answer"> </textarea>
               </div>
             </form>
           </div>
