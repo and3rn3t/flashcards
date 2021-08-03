@@ -1,6 +1,6 @@
-# Project #1: Build a Game with HTML, CSS and JavaScript
+# Project 1: Build a Game with HTML, CSS and JavaScript
 
-## Flashcards v0.1: By Matthew Anderson
+## Flashcards v0.1: Matthew Anderson
 
 A flashcard application for learning JavaScript terms.
 
