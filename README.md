@@ -1,17 +1,20 @@
+# Project #1: Build a Game with HTML, CSS and JavaScript
+## Flashcards: By Matthew Anderson
 
-# flashcards
-A fun flashcards application for learning topics.
+A flashcard application for learning JavaScript terms.
 
-This readme file should include:
+    - Technologies and references:
+        I used the Bootstrap v5 framework to begin building my HTML and CSS, then added a few bits of Bootstrap JS functionality to enable the "answer reveal" and future "new card" abilities.
 
-    - Explanations of the technologies used
-    - Approach taken
-    - Installation instructions
-    - Unsolved problems
-    - Any other useful information
+    - Approach taken:
+        I knew I wanted to experiment with Bootstrap, because it seemed like a neat framework to begin with. I spent my first day just reading through documentation and "Getting Started" guides, then began to experiment with basic layout and styling elements. Once I created the initial layout, adding cards was easy. I just needed to figure out how to "reveal" the answers. I decided a simple popover was good as a minimum, with the "flip card" function coming with a future iteration. I also set up the framework of the "new card" function, but there wasn't enough time to enable that feature during this sprint.
 
-Follow this mini-lesson on writing documentation for your project: https://git.generalassemb.ly/dc-wdi-fundamentals/markdown-and-documentation
+    - Installation instructions:
+        None
 
-Sample project readmes:
-    - https://github.com/reemharbi/BloodApp
-    - https://github.com/AlkhaldiAzzam/Project1-Tic-Tac-Toe
+    - Unsolved problems / coming features:
+        * Next iteration, new card feature (allow users to add new cards dynamically)
+        * Refactor popover answers to flip function
+        * Figure out wrapping and card creation so that the cards do not fill the screen lengthwise (research Bootstrap card groups and functionality)
+        * Add self-scoring mechanism
+        * Decks (other topics)?
